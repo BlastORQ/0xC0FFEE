@@ -4,11 +4,10 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="main_text">Головна</string>
-    <string name="schedules_text">Розклади</string>
-    <string name="group_text">Група</string>
-    <string name="chat_text">Чат</string>
     <string name="news_text">Новини</string>
-    <string name="free_time_text">Дозвілля</string>
+    <string name="schedules_text">Розклад</string>
+    <string name="chat_text">Чати</string>
+    <string name="settings_text">Налаштування</string>
+    <string name="help_text">Довідка</string>
+    <string name="exit_text">Вихід</string>
 </resources>
