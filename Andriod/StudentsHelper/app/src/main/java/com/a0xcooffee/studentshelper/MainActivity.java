@@ -13,12 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewStub;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    @SuppressWarnings("all")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,9 +77,9 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.schedules_button) {
 
-        } else if (id == R.id.chat_button){
-            chatButtonAction();
-        } else if (id == R.id.settings_button){
+        } else if (id == R.id.chat_button) {
+
+        } else if (id == R.id.settings_button) {
 
         }else if (id == R.id.help_button) {
 
@@ -93,12 +91,4 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    public void chatButtonAction(){
-        View view = (View) findViewById(R.id.activity_content);
-        ViewStub stub = (ViewStub) view;
-        stub.setLayoutResource(R.layout.chat_activity);
-        View inflated = stub.inflate();
-    }
-
 }
