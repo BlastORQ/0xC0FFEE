@@ -1,0 +1,135 @@
+/*
+	HEADER
+*/
+.bg_wrapper{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+	z-index: -100;
+	overflow: hidden;
+	background-color: #2497c8;
+}
+.bg_img{
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(45deg, #2e3192, #1bffff);
+	transition-property: background-image;
+}
+
+.header{
+	display: table;
+	position:relative;
+	width: 100%;
+	min-height: 100vh;
+	text-align:center;
+	z-index:1001;
+}
+.header > .inner{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 32px 0;
+}
+.header .ava{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	border: 4px solid #ffffff;
+	z-index: 1;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/assets/images/ava.jpg);
+}
+.header h1{
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin: 16px auto;
+	font-size: 48px;
+	font-weight: 300;
+	color: #ffffff;
+	z-index: 2;
+}
+.header h2{
+	display: block;
+	max-width: 800px;
+	margin: 16px auto;
+	font-size: 32px;
+	font-weight: 300;
+	color: #ffffff;
+	z-index: 2;
+}
+
+.header nav{
+	display: block;
+}
+.header nav a{
+	display:inline-block;
+	width: 200px;
+	max-width: 100%;
+	margin: 16px 0;
+	padding: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+.header nav a .icon{
+	display: inline-block;
+	padding: 16px;
+	border-radius: 100%;
+	background: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 0 2px #ffffff;
+	font-size: 0;
+}
+.header nav a:hover .icon{
+	border-radius: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0 4px #ffffff;
+}
+.header nav a .icon img{
+	height: 28px;
+}
+.header nav a .text{
+	display: block;
+	padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+.ripple{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 100%;
+	transform: scale(0);
+	transition-duration: 0s;
+	pointer-events: none;
+}
+.ripple.show{
+	animation: ripple 0.75s ease-out;
+}
+@keyframes ripple{
+	to{
+		transform: scale(2);
+		opacity: 0;
+	}
+}
