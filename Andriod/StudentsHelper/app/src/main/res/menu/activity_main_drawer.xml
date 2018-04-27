@@ -5,34 +5,30 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/main_button"
+            android:id="@+id/news_button"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/main_text" />
+            android:title="@string/news_text" />
         <item
             android:id="@+id/schedules_button"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/schedules_text" />
         <item
-            android:id="@+id/group_button"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/group_text" >
-            <menu>
-                <item
-                    android:id="@+id/chat_button"
-                    android:icon="@drawable/ic_menu_manage"
-                    android:title="@string/chat_text" />
-                <item
-                    android:id="@+id/news_button"
-                    android:icon="@drawable/ic_menu_manage"
-                    android:title="@string/news_text" />
-            </menu>
-
-        </item>
-            <item
-            android:id="@+id/free_time_button"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/free_time_text"/>
+            android:id="@+id/chat_button"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/chat_text" />
     </group>
-
-
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings_button"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/settings_text" />
+        <item
+            android:id="@+id/help_button"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/help_text" />
+        <item
+            android:id="@+id/exit_button"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/exit_text" />
+    </group>
 </menu>
