@@ -1,30 +1,56 @@
 package com.a0xcooffee.studentshelper;
-
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.util.Log;
-import android.view.View;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivityNews extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener{
+        static final String TAG = "myLogs";
+    static final int PAGE_COUNT = 10;
 
+    ViewPager pager;
+    PagerAdapter pagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        SharedPreferencesHelper helper = new SharedPreferencesHelper(this, "data");
-        helper.writeString("apple", "red");
-        Log.d("READED FROM data ", helper.getPreferenceString("apple"));
+        setContentView(R.layout.news_main_content);
+
+        pager = (ViewPager) findViewById(R.id.pager);
+        pagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
+        pager.setAdapter(pagerAdapter);
+
+        pager.setOnPageChangeListener(new OnPageChangeListener() {
+
+            @Override
+            public void onPageSelected(int position) {
+                Log.d(TAG, "onPageSelected, position = " + position);
+            }
+
+            @Override
+            public void onPageScrolled(int position, float positionOffset,
+                                       int positionOffsetPixels) {
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+        });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,7 +74,6 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -68,7 +93,23 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+    private class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
+        public MyFragmentPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return PageFragment.newInstance(position);
+        }
+
+        @Override
+        public int getCount() {
+            return PAGE_COUNT;
+        }
+
+    }
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
