@@ -1,0 +1,47 @@
+<style>
+input, textarea{
+	display: block;
+	padding:8px;
+	font-size:18px;
+	border:0px;
+	border-radius: 2px;
+	min-width:250px;
+	background:#ffffff;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+</style>
+<input id="method" value="Feed.get"><br>
+<textarea id="params" rows="8" cols="50">
+{
+	token: "0xC0FFEE"
+}
+</textarea>
+<br>
+<button onclick="submit()">Submit</button>
+<pre id="out"></pre>
+<script>
+function submit(){
+	var method = document.getElementById("method").value;
+	var params = JSON.parse(JSON.stringify(document.getElementById("params").value));
+	req(method, params).then((data) => {
+		data = JSON.stringify(data, null, 2);
+		document.getElementById("out").innerText = data;
+	});
+}
+
+function req(u, p = false){
+	var t = "http://coffee.in/API/" + u;
+	
+	var params = {
+		credentials: "same-origin"
+	};
+	if(p){
+		params.method = "POST",
+		params.body = p
+	}
+	return fetch(t, params).then(data => data.json())
+	.then((data) => new Promise((ok, no) => {
+		ok(data);
+	}));
+}
+</script>
