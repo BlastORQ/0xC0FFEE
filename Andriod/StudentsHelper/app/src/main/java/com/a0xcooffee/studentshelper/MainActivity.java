@@ -73,15 +73,17 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.main_button) {
+        if (id == R.id.news_button) {
 
         } else if (id == R.id.schedules_button) {
 
         } else if (id == R.id.chat_button) {
 
-        } else if (id == R.id.news_button) {
+        } else if (id == R.id.settings_button) {
 
-        }else if (id == R.id.free_time_button) {
+        }else if (id == R.id.help_button) {
+
+        }else if (id == R.id.exit_button) {
 
         }
 
