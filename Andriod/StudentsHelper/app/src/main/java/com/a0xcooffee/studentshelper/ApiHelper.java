@@ -27,7 +27,6 @@ public class ApiHelper {
             /*for(Object element : array){
 
             }*/
-
         }catch (Exception e){
             e.printStackTrace();
         }

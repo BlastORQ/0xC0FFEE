@@ -16,8 +16,19 @@
     <string name="exit_text">Вихід</string>
     <string name="more_sleep">Тобі слід більше відпочивати!</string>
     <string name="you_sleep">Твій середній час сну: 6 годин</string>
+<<<<<<< HEAD
     <string name="title">PhTL</string>
     <string name="description">Bazovski</string>
+=======
+<<<<<<< HEAD
+    <string name="description">Деякий опис якоїсь новини</string>
+    <string name="news_more">Більше</string>
+    <string name="title">Новина</string>
+=======
+    <string name="title">blla</string>
+    <string name="description">bla</string>
+>>>>>>> a29071145e0e77078bf78d57d8990af01f3d5d54
     <string name="news_more">bla</string>
     <string name="tanutanu1">Гурток бальних танців попереджає, що заняття.. Читати далі...</string>
+>>>>>>> a3f51be61208940f196e95e3951ec175e4dd5809
 </resources>
