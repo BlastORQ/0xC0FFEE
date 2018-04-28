@@ -24,7 +24,7 @@ function submit(){
 	var method = document.getElementById("method").value;
 	var params = JSON.parse(JSON.stringify(document.getElementById("params").value));
 	req(method, params).then((data) => {
-		data = JSON.stringify(data, null, 2);
+		data = JSON.stringify(data, null, 4);
 		document.getElementById("out").innerText = data;
 	});
 }
