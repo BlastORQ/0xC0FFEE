@@ -23,13 +23,7 @@ public class ApiHelper {
         try {
             JSONObject object = new JSONObject(json);
             JSONArray array =  object.getJSONArray("news");
-<<<<<<< HEAD
 
-=======
-            /*for(Object element : array){
-
-            }*/
->>>>>>> 6d8b29412550e5417d52fe04e5b27ada1a3eb6f7
         }catch (Exception e){
             e.printStackTrace();
         }
