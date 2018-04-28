@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="lorem"> Vestibulum bibendum, purus et cursus dignissim, diam ipsum scelerisque leo, eget efficitur enim nunc et nisl. Donec condimentum, arcu non euismod vulputate, massa ante ornare turpis, sit amet euismod elit sapien quis augue.</string>
+    <string name="lorem">Увага! Через небезпечну ситуацію в...</string>
     <string name="news_text">Новини</string>
     <string name="schedules_text">Розклад</string>
     <string name="chat_text">Чати</string>
@@ -16,7 +16,14 @@
     <string name="exit_text">Вихід</string>
     <string name="more_sleep">Тобі слід більше відпочивати!</string>
     <string name="you_sleep">Твій середній час сну: 6 годин</string>
+<<<<<<< HEAD
     <string name="description">Деякий опис якоїсь новини</string>
     <string name="news_more">Більше</string>
     <string name="title">Новина</string>
+=======
+    <string name="title">blla</string>
+    <string name="description">bla</string>
+    <string name="news_more">bla</string>
+    <string name="tanutanu1">Гурток бальних танців попереджає, що заняття.. Читати далі...</string>
+>>>>>>> a3f51be61208940f196e95e3951ec175e4dd5809
 </resources>
