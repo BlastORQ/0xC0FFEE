@@ -88,8 +88,6 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.news_button) {
 
-        } else if (id == R.id.schedules_button) {
-
         } else if (id == R.id.chat_button) {
 
         } else if (id == R.id.settings_button) {

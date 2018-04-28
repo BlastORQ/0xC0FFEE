@@ -6,12 +6,9 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/news_button"
-            android:icon="@drawable/news"
+            android:icon="@drawable/avatar"
             android:title="@string/news_text" />
-        <item
-            android:id="@+id/schedules_button"
-            android:icon="@drawable/date"
-            android:title="@string/schedules_text" />
+
         <item
             android:id="@+id/chat_button"
             android:icon="@drawable/speech_bubbles"
