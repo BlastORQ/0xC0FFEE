@@ -4,6 +4,9 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar molestie nisl, in suscipit est hendrerit et. Ut nec massa ex. Nullam varius sapien leo. Nunc ultricies sapien nibh, sit amet vulputate tortor condimentum sit amet. Quisque rutrum, metus ut sagittis aliquam, justo ex pretium lacus, vitae egestas neque sem ut odio. Mauris malesuada blandit lobortis. Quisque lacinia massa at dolor laoreet feugiat. Quisque lacinia quam nibh, sit amet vehicula lorem mattis quis. Sed imperdiet tincidunt vulputate. In mauris nibh, placerat sit amet turpis eu, accumsan ullamcorper diam. Donec lorem ipsum, rhoncus nec imperdiet ut, volutpat non leo. Vestibulum nec sagittis lectus, quis accumsan magna.
+
+Sed condimentum, sapien ac sagittis feugiat, mauris nunc molestie purus, nec congue metus sapien et elit. Etiam feugiat, sem sed scelerisque placerat, eros lacus eleifend ex, vel rhoncus odio libero ac purus. Proin eu lacus mi. Morbi porta lacus at enim placerat, vel fringilla augue tristique. Mauris vel posuere nulla. Vestibulum ac nibh non tellus suscipit venenatis nec sit amet metus. Fusce vel justo et elit porta aliquet. Aliquam varius lorem dignissim, semper nunc sed, suscipit nibh. Vestibulum bibendum, purus et cursus dignissim, diam ipsum scelerisque leo, eget efficitur enim nunc et nisl. Donec condimentum, arcu non euismod vulputate, massa ante ornare turpis, sit amet euismod elit sapien quis augue.</string>
     <string name="news_text">Новини</string>
     <string name="schedules_text">Розклад</string>
     <string name="chat_text">Чати</string>
