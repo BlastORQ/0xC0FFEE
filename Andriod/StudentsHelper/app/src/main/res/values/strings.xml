@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="lorem"> Vestibulum bibendum, purus et cursus dignissim, diam ipsum scelerisque leo, eget efficitur enim nunc et nisl. Donec condimentum, arcu non euismod vulputate, massa ante ornare turpis, sit amet euismod elit sapien quis augue.</string>
+    <string name="lorem">Увага! Через небезпечну ситуацію в...</string>
     <string name="news_text">Новини</string>
     <string name="schedules_text">Розклад</string>
     <string name="chat_text">Чати</string>
@@ -19,4 +19,5 @@
     <string name="title">blla</string>
     <string name="description">bla</string>
     <string name="news_more">bla</string>
+    <string name="tanutanu1">Гурток бальних танців попереджає, що заняття.. Читати далі...</string>
 </resources>
