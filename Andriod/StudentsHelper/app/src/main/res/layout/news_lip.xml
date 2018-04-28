@@ -2,21 +2,20 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="380dp"
+    android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:onClick="newsOnClick">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/dsc_0076" />
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/title"
@@ -49,10 +48,7 @@
             android:layout_alignParentRight="true"
             android:padding="8dp"
             android:text="@string/news_more"
-<<<<<<< HEAD
             android:textColor="#FAFAFA"
-=======
->>>>>>> a3f51be61208940f196e95e3951ec175e4dd5809
-            android:textSize="14dp" />
+            android:textSize="14sp" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>
