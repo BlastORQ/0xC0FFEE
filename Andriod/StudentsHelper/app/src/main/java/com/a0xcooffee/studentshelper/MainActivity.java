@@ -1,5 +1,6 @@
 package com.a0xcooffee.studentshelper;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -27,20 +28,6 @@ public class MainActivity extends AppCompatActivity
         Log.d("READED FROM data ", helper.getPreferenceString("apple"));
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-                ApiHelper apiHelper = new ApiHelper();
-                try {
-                    Log.i("DATA", apiHelper.getNewsTitle());
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-            }
-        });
-        thread.start();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -101,5 +88,9 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void goToNewsList(View view){
+        Intent intent = new Intent(MainActivity.this, NewsActivity.class);
+        startActivity(intent);
     }
 }

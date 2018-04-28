@@ -12,15 +12,20 @@ public class NewsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setContentView(R.layout.news_list);
-        ListView view = (ListView) findViewById(R.id.simpleListView);
-
-        ArrayList<News> data = new ArrayList<News>();
-
-        for(int i = 0;i<10;i++){
-            data.add(new News("Гурток бальних танців розшукує вбивцю", "Учасники бальних танців були шоковані....\n Читати далі", ""));
-        }
-
-        view.setAdapter(new NewsListAdapter(this, data));
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    ListView view = (ListView) findViewById(R.id.simpleListView);
+                    ApiHelper helper = new ApiHelper();
+                    ArrayList<News> data = helper.getNewsList();
+                    view.setAdapter(new NewsListAdapter(NewsActivity.this, data));
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
+        thread.start();
         super.onCreate(savedInstanceState);
     }
 }
