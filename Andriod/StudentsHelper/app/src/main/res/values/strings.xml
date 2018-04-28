@@ -16,4 +16,7 @@
     <string name="exit_text">Вихід</string>
     <string name="more_sleep">Тобі слід більше відпочивати!</string>
     <string name="you_sleep">Твій середній час сну: 6 годин</string>
+    <string name="title">blla</string>
+    <string name="description">bla</string>
+    <string name="news_more">bla</string>
 </resources>
